@@ -2,9 +2,10 @@
 
 **Clone Repo**
 
-## `git clone https://github.com/vallisweekes/react-without-react-scripts.git`
+`git clone https://github.com/vallisweekes/react-without-react-scripts.git`
 
 **Install all Dependencies**
+
 `npm i`
 
 ---
