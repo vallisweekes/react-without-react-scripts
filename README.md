@@ -2,11 +2,13 @@
 
 **Clone Repo**
 
-`code`
-git clone https://github.com/vallisweekes/react-without-react-scripts.git
+## `git clone https://github.com/vallisweekes/react-without-react-scripts.git`
 
-`code`
-npm i
+**Install all Dependencies**
+`npm i`
 
-`code`
-npm start
+---
+
+**Install all Dependencies**
+
+`npm start`
