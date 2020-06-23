@@ -39,6 +39,7 @@ module.exports = {
 	},
 	devServer: {
 		port: 3000,
+		overlay: true,
 		stats: {
 			assets: false,
 			children: false,
