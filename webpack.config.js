@@ -7,6 +7,9 @@ module.exports = {
 		path: path.join(__dirname, '/build'),
 		filename: 'bundle.js',
 	},
+	resolve: {
+		extensions: ['.tsx', '.ts', '.js'],
+	},
 	module: {
 		rules: [
 			{
@@ -32,6 +35,15 @@ module.exports = {
 						options: {
 							name: '[path][name].[ext]',
 						},
+					},
+				],
+			},
+			{
+				test: /\.ts(x?)$/,
+				exclude: /node_modules/,
+				use: [
+					{
+						loader: 'ts-loader',
 					},
 				],
 			},
