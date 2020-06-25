@@ -1,0 +1,18 @@
+.counter {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.btn-flex {
+    width: 270px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    outline: none;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    color: #000000;
+}
