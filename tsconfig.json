@@ -1,12 +1,23 @@
 {
-	"compilerOptions": {
-		"module": "system",
-		"noImplicitAny": true,
-		"removeComments": true,
-		"preserveConstEnums": true,
-		"outFile": "../../built/local/tsc.js",
-		"sourceMap": true
-	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules", "**/*.spec.ts"]
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "paths": {
+      "components/*": ["src/components/*"]
+    }
+  },
+  "include": ["./src"]
 }
