@@ -1,7 +1,7 @@
 import path from 'path';
 import { Configuration } from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-
+// import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 const webpackConfig = (): Configuration => ({
   entry: './src/index.tsx',
   resolve: {
@@ -13,9 +13,8 @@ const webpackConfig = (): Configuration => ({
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'bundle.js',
-    publicPath: 'build',
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -54,7 +53,7 @@ const webpackConfig = (): Configuration => ({
       },
     ],
   },
-  devtool: 'inline-source-map',
+
   devServer: {
     port: 3000,
     overlay: true,
@@ -70,10 +69,6 @@ const webpackConfig = (): Configuration => ({
       warnings: true,
     },
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-  ],
+  plugins: [new CleanWebpackPlugin()],
 });
 export default webpackConfig;
