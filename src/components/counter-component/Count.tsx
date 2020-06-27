@@ -18,10 +18,10 @@ const Count = (props: MessageProps): any => {
       </p>
       <div className="btn-flex">
         <button type="button" onClick={increase}>
-          Increase
+          INCREASE
         </button>
         <button type="button" onClick={decrease}>
-          Decrease
+          DECREASE
         </button>
       </div>
     </div>

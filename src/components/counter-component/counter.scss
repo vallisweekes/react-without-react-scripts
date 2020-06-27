@@ -5,9 +5,10 @@
 }
 
 .btn-flex {
-    width: 270px;
+    width: 275px;
     display: flex;
     justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
 button {
@@ -15,4 +16,6 @@ button {
     margin-top: 1rem;
     padding: 0.5rem 2rem;
     color: #000000;
+    cursor: pointer;
+    font-weight: 600;
 }

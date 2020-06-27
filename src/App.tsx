@@ -7,9 +7,11 @@ export interface MessageProps {
 }
 export const App = () => {
   return (
-    <div className="App">
-      <h1>Hi React</h1>
-      <Count message={'My Counter is'} />
-    </div>
+    <React.StrictMode>
+      <div className="App">
+        <h1>Hi React</h1>
+        <Count message={'My Counter is'} />
+      </div>
+    </React.StrictMode>
   );
 };
