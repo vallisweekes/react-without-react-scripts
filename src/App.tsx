@@ -5,7 +5,7 @@ import './app.scss';
 export interface MessageProps {
   message: string;
 }
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <React.StrictMode>
       <div className="App">

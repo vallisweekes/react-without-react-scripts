@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { MessageProps } from '../../App';
 
 import './counter.scss';
-const Count = (props: MessageProps): any => {
-  const [count, setCount] = useState(0);
+const Count = (props: MessageProps): JSX.Element => {
+  const [count, setCount] = useState<number>(0);
 
   const increase = (): void => {
     setCount(count + 1);
